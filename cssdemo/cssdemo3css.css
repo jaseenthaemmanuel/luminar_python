@@ -1,0 +1,18 @@
+.firstDiv{
+color:blue;
+}
+.secondDiv{
+color:white;
+background-color:black;
+}
+#singledout{
+color:red;
+}
+/*adjacent siblings*/
+h3+ul{
+border:3px solid purple;
+}
+/*descentants*/
+li a{
+color:black;
+}

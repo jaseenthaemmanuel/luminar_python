@@ -1,0 +1,14 @@
+/*
+body{
+background-color:grey;
+}*/
+
+div{
+background-color:blue;
+border:red;
+border-style:dotted solid;
+border-width:thick;
+}
+p{
+color:yellow;
+}

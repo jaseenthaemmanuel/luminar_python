@@ -1,0 +1,25 @@
+/* general form:
+Selected tag{
+
+property:value;
+
+}
+*/
+h1{
+color:red;
+font-family:arial;
+text-align:center;
+font-style:italic;
+}
+/*
+li{
+color:blue;
+font-style:italic;
+}
+*/
+li{
+color:rgb(200,0,0);
+}
+p{
+color:#50ad09
+}
