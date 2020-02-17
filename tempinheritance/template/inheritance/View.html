@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% extends "inheritance/base.html" %}
+    {% block body_block%}
+<body>
+    <h1>EMPLOYEE DETAILS</h1>
+    <table border="2">
+     <tr>
+        <td>Name</td>
+        <td>Age</td>
+        <td>Salary</td>
+         <td>desig</td>
+         <td>phonenum</td>
+        </tr>
+    {{ob}}
+        {% for j in ob %}
+             <tr>
+                 <td> {{ j.name }}</td>
+                 <td> {{ j.age }} </td>
+                 <td> {{ j.salary }} </td>
+                  <td> {{ j.desig }} </td>
+                  <td> {{ j.phonenum }} </td>
+             </tr>
+        {% endfor %}
+        </body>
+        {% endblock %}
+
+</html>

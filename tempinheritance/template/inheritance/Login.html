@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% extends "inheritance/base.html" %}
+    {% block body_block %}
+<body>
+    <form method="post" name="LOGIN" action="{% url 'tview' %}">
+   {% csrf_token %}
+     {{form.as_p}}
+<!--  USER ID<input type="text"name="text1">-->
+<!--  <br>PASSWORD<input typy="password" name="text2">-->
+<!--  <br>-->
+    <input type="submit"name="button1"value="LOGIN">
+    </form>
+ {% endblock %}
+
+</body>
+
