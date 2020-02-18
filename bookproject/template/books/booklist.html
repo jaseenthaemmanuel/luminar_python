@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>listing the books </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+<table class="table table-dark">
+    <thead>
+    <tr>
+      <th scope="col">BookName</th>
+      <th scope="col">Page</th>
+      <th scope="col">View</th>
+      <th scope="col">Edit</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+    <tbody>
+    {% for i in object %}
+    <tr>
+        <td>{{i.bookname}}</td>
+        <td>{{i.page}}</td>
+        <td><a class="btn btn-outline-success" href="{% url 'bookview' i.id %}">view</a> </td>
+        <td><a class="btn btn-outline-danger" href="#">edit</a> </td>
+        <td><a class="btn btn-outline-warning" href="#">delete</a> </td>
+    </tr>
+    </tbody>
+    {% endfor %}
+         <a href="{% url 'bookcreate' %}">create</a>
+
+</table>
+</div>
+</body>
+</html>
